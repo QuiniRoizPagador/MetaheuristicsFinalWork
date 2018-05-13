@@ -1,0 +1,21 @@
+﻿Id;Nombre;Apellido1;Apellido2;Sexo;Nif;Direccion;Municipio;Provincia;Cp;Movil;Telefono;Correo;Nacimiento;direccion_y;diireccion_y;max_clientes;Coste
+1;María Jesús;Valencia;Vidal;M;55598678L;Paseo Vuelta Lista 17, 1º;Benicarló;Castellón;12271;690-579-692;964-919-821;marvalencia@email.es;09/09/1935;213;260;10;24092
+2;Manuel;Rubio;Soler;H;72383640H;Avenida Sosiego 51, 5;Benidorm;Alicante;3307;635-746-126;967-165-365;manrubio@email.es;31/03/1984;384;27;11;18344
+3;María Luisa;García;Llopis;M;82175919R;Avenida  Proposición Pequeña 52, 3º 4ª;Madrid;Madrid;28972;658-253-931;918-964-333;garcia26@correo.com;23/12/1986;391;119;11;23826
+4;Laia;Rodríguez;Martin;M;03195495J;Paseo Septentrional Estudioso 132, 5º 5ª;Motril;Granada;18060;641-465-717;958-419-161;lrodriguez@email.com;09/01/2000;221;189;14;18535
+5;Manuel;Sánchez;González;H;02673265K;Plaza  Binomio Alto 148, 5;Utrera;Sevilla;41806;606-067-915;951-938-482;manuel.sanchez@mail.es;01/03/1991;264;303;18;22090
+6;María;Plaza;Gil;M;15106576S;Paseo Enseñanza 178, 6º;San Bartolomé de Tirajana;Las Palmas;35477;695-130-405;928-221-577;plaza17@correo.es;24/06/1974;233;256;17;22161
+7;Sergio;Mamani;Vega;H;86113819W;Paseo Citoplasma 50, 4º 3ª;Barcelona;Barcelona;8374;653-839-468;933-000-450;smamani@mail.net;15/03/1990;488;293;19;17718
+8;Concepción;Millán;Pallares;M;01101630E;Paseo  Composición Azul 250 bis, 4;Málaga;Málaga;29142;689-820-875;952-241-088;cmillan@email.net;06/12/1999;181;26;20;18683
+9;Josefa;Escribano;Serrano;M;25058329J;Paseo Decadencia Viajera 2, 5º;Hospitalet de Llobregat;Barcelona;8367;676-437-527;934-926-080;jos.escribano@email.net;01/06/1995;304;236;10;18640
+10;Antonio Jesús;Alegre;Vázquez;H;76358305F;Paseo Objeción 255, 1º;Jerez de la Frontera;Cádiz;11745;688-727-885;956-115-815;antonialegre@mail.net;22/06/2000;92;207;13;19821
+11;Daniel;Cervera;Ferreiro;H;16831475Y;Avenida Mesías 66, 4º;Roquetas de Mar;Almería;4011;630-401-581;950-322-909;dancervera43@correo.es;08/03/1968;391;486;10;16966
+12;Félix;De Castro;Carrillo;H;90819459A;Calle de  Bautismo 223, 3º 1ª;Ávila;Ávila;5416;660-599-540;920-956-641;feldecastro@mail.es;19/08/1955;427;381;19;18739
+13;Diego;De la Cruz;Ruiz;H;89084260Q;Avenida Herbívoro Maduro 232, 2º;Barcelona;Barcelona;8468;661-709-615;931-272-676;delacruz6@email.com;10/04/1955;173;489;17;24884
+14;Natalia;Goñi;Fernández;M;43203032Q;Plaza Abdicación 296, 1;Mataró;Barcelona;8283;658-534-608;931-403-393;goñi63@mail.es;01/03/1938;219;461;12;18099
+15;Antonio;Domínguez;Fernández;H;36669650Z;Paseo Comunicativo Joven 4, 1º;San Sebastián;Guipúzcoa;20800;645-715-144;943-301-303;dominguez97@mail.com;22/02/1948;261;457;11;19579
+16;José Manuel;Rodríguez;Verdejo;H;23003618F;Avenida Eficiencia 296, 4;Villanueva y Geltrú;Barcelona;8219;635-693-986;931-553-160;josrodriguez@mail.es;25/07/1944;309;478;15;17723
+17;María Carmen;Villaverde;González;M;96803743D;Avenida Víscera 248, 4º;Lebrija;Sevilla;41797;639-945-008;956-941-594;mvillaverde@mail.com;01/11/1955;246;474;18;16296
+18;María Luisa;Moreno;Mendieta;M;01084191V;Calle Frugívoro Mentiroso 77, 3º;Molina de Segura;Murcia;30523;659-459-964;968-849-939;marialuisa.moreno@mail.com;23/02/1962;383;423;18;21197
+19;Javier;Mesa;Gómez;H;34488449H;Plaza de  Hiperónimo Abierto 43, 6º 5ª;Játiva;Valencia;46399;639-727-666;963-911-154;javier.mesa@mail.com;19/05/1991;244;354;19;16763
+20;Jesús;Armero;Hernández;H;92434006L;Plaza Concesión Madura 82, 1;Zaragoza;Zaragoza;50764;629-157-259;976-496-698;armero9@mail.net;27/05/1966;390;170;15;24711

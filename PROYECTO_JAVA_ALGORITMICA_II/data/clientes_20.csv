@@ -1,0 +1,21 @@
+﻿Id;Nombre;Apellido1;Apellido2;Sexo;Nif;Direccion;Municipio;Provincia;Cp;Movil;Telefono;Correo;Nacimiento;direccion_y;diireccion_y
+1;José María;Casado;Gómez;H;94625044P;Plaza Obsesión Fuerte 157, 4º 1ª;Getafe;Madrid;28635;619-886-686;919-558-864;casado74@mail.com;13/01/1974;127;442
+2;Ana María;Moral;Moreno;M;34915943B;Calle Sensibilidad 221, 4º;Cuart de Poblet;Valencia;46427;677-209-146;967-959-515;moral99@mail.es;23/11/1990;445;286
+3;Manuel;Álvarez;Hernández;H;33221618G;Plaza Confesión Lista 15, 3º;Oleiros;La Coruña;15825;608-059-851;981-337-946;manalvarez@mail.net;24/09/1990;347;227
+4;Ana María;Valenzuela;García;M;74085807R;Avenida de  Hamaca 191, 2º 1ª;Valdepeñas;Ciudad Real;13277;602-570-583;926-697-987;anvalenzuela@email.net;19/03/1994;456;410
+5;Montserrat;León;Castellano;M;17251797A;Calle Residencia Valiente 160, 6º 3ª;San Cristóbal de la Laguna;S.C. de Tenerife;38634;694-063-501;922-754-266;mleon@email.es;08/03/2000;201;104
+6;Antonio;García;Expósito;H;02880672Z;Paseo Evaluación Luminosa 164, 3º 2ª;Molina de Segura;Murcia;30012;639-267-225;968-873-108;antgarcia43@mail.es;26/01/1960;71;360
+7;Pilar;Manzano;Salguero;M;61876380D;Paseo Disección Abstracta 214, 1º;Tarrasa;Barcelona;8165;695-536-142;934-239-540;pilmanzano79@email.es;02/02/1961;367;178
+8;Pablo;Tena;Donoso;H;46070058T;Calle Juventud 27, 4º 3ª;Torrente;Valencia;46773;656-432-498;960-393-882;pab.tena@correo.com;05/06/1986;219;123
+9;Juan Antonio;Camarasa;González;H;18883634J;Plaza Profesión 96, 2º 3ª;Santa Lucía de Tirajana;Las Palmas;35806;697-459-940;928-004-962;jua.camarasa@mail.es;21/02/1947;392;84
+10;José María;Morón;Martínez;H;60871119D;Plaza  Objeto Deportivo 231, 6º;Requena;Valencia;46862;621-798-426;964-575-301;moron58@email.net;15/03/1976;49;410
+11;María Carmen;Benítez;García;M;11819086F;Avenida de la Conjunción 61, 3;Granada;Granada;18591;605-930-076;958-199-252;benitez33@email.net;09/08/1985;192;422
+12;María;Pérez;Sastre;M;43983197K;Paseo Vestigio 118, 3º 2ª;Almendralejo;Badajoz;6508;664-401-575;924-512-427;mariaperez94@mail.com;03/05/1995;182;165
+13;Carlos;Flores;Calvo;H;87476735F;Calle de  Confesión Viajera 299, 4º 3ª;Manlleu;Barcelona;8345;643-886-672;931-460-880;c.flores@correo.com;20/10/1979;197;436
+14;María Carmen;Martin;Corbacho;M;57252410M;Plaza Atribución 264, 3;Málaga;Málaga;29930;662-117-774;950-696-741;mmartin@email.net;08/08/1989;170;336
+15;Ana;Gómez;Pitarch;M;58911764R;Paseo  Expedición 212, 2º 5ª;Las Palmas de G. C.;Las Palmas;35256;608-881-087;928-010-348;anagomez44@mail.es;20/09/1968;342;107
+16;David;Lopera;Plana;H;15048089V;Plaza la Concesión Madura 114, 2º 2ª;Santa Pola;Alicante;3267;681-602-580;968-180-836;lopera98@mail.net;05/01/1980;154;82
+17;María;Tamayo;Cantero;M;08588572G;Paseo Resolución 50, 3;Blanes;Gerona;17790;626-579-663;972-933-699;mar.tamayo@email.net;19/12/1959;72;113
+18;Alejandro;Medina;Flor;H;98709508V;Calle de  Advocación 241, 6º 3ª;Villena;Alicante;3055;616-563-031;963-236-651;amedina@correo.com;07/08/1954;317;227
+19;Josefa;Iglesias;Sánchez;M;62949435E;Calle Centímetro Aurífero 239, 3º;Barcelona;Barcelona;8626;641-292-898;931-545-412;jiglesias27@email.net;25/12/1977;495;309
+20;Eduardo;Ruiz;Gracia;H;30872355F;Avenida Ave 202, 6º 5ª;Sevilla;Sevilla;41537;667-796-662;953-115-517;ruiz13@mail.es;04/08/1981;324;29

@@ -1,0 +1,58 @@
+/**
+ * Copyright (c) 2018, Joaquín Roiz Pagador y colaboradores.
+ * <p>
+ * Libre distribución haciendo referencia al autor.
+ *
+ *
+ */
+package es.geneticalgorithm.model.persistence.readers;
+
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import es.geneticalgorithm.model.Cliente;
+import es.geneticalgorithm.model.persistence.FileManager;
+
+/**
+ * Clase que lee instancias de clientes o pacientes
+ *
+ * @author Quini Roiz
+ */
+public class ClientReader {
+
+    private static final String PATH = "data/clientes";
+
+    /**
+     * Lectura de fichereos para clientes. Lee y crea objetos a partir de lo
+     * leído
+     *
+     * @param nPacientes tamaño de la instancia
+     * @return Listado leído
+     */
+    public static List<Cliente> lecturaDeFicheros(int nPacientes) {
+        List<Cliente> clients = new ArrayList<>();
+        try {
+            String[] data = FileManager.readFile(PATH + "_" + nPacientes + ".csv").split("\n");
+            Cliente client;
+            String[] attrs;
+            Calendar cal;
+            SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+            for (int i = 1; i < data.length; i++) {
+                attrs = data[i].split(";");
+                cal = Calendar.getInstance();
+                cal.setTime(sdf.parse(attrs[13]));
+                client = new Cliente(Integer.valueOf(attrs[0]), attrs[1], attrs[2], attrs[3], attrs[5], attrs[4].charAt(0),
+                            attrs[6], attrs[7], attrs[8], Integer.valueOf(attrs[9]), attrs[10],
+                            attrs[11], attrs[12], cal, Integer.valueOf(attrs[14]), Integer.valueOf(attrs[15]));
+                clients.add(client);
+            }
+        } catch (Exception ex) {
+            Logger.getLogger(ClientReader.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
+        return clients;
+    }
+}
