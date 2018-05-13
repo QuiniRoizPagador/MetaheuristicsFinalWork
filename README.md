@@ -2,8 +2,6 @@
 
 ## Descripción
 
-![](https://github.com/QuiniRoizPagador/MetaheuristicsFinalWork/blob/master/graphic.gif)
-
 Trabajo final para la asignatura de Algorítmica II del Grado en Ingeniería Informática en la Universidad Pablo de Olavide, impartida por el profesor David D. de Vega Rodríguez.
 
 Este proyecto tiene el fin de servir a modo de pruebas para el proyecto final de la asignatura Algorítmica II, donde se han estudiado los algoritmos metaheurísticos Enfriamiento Simulado, Algoritmo Genético y Algoritmo Memético, haciendo uso de los dos primeros en el tercero para comprobar la forma en la que trabajan juntos ante el problema propuesto.
@@ -35,8 +33,15 @@ Se dispone de una documentación, así como una presentacion que explica el cont
 --------------------
 1. Ejecutar Metaheuristics_EB_Final.jar
 2. Elegir el tamaño de médicos y pacientes con los que trabajar (Recomendable igual tamaño).
-3. Elegir el algoritmo con el que buscar la solución al problema.
-4. Una vez terminada la ejecución se abrirá el archivo PDF con el informe de la solución encontrada.
+3. Elegir el algoritmo con el que buscar la solución al problema. 
+4. Ejecutar el algoritmo. Se verán las dos ventanas comportándose de la siguiente forma:
+
+![](https://github.com/QuiniRoizPagador/MetaheuristicsFinalWork/blob/master/mainView.gif)
+
+![](https://github.com/QuiniRoizPagador/MetaheuristicsFinalWork/blob/master/graphic.gif)
+
+
+5. Una vez terminada la ejecución se abrirá el archivo PDF con el informe de la solución encontrada.
 5. Para observar el array de soluciones acceder a reports/txt y abrir el adecuado con el block de notas.
 
 ## Author
