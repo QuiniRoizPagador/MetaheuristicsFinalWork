@@ -10,16 +10,16 @@ Se dispone de una documentación, así como una presentacion que explica el cont
 
 ## Estructura
 --------------------
-* **Programa_Jar** → Carpeta con lo necesario para ejecutar la aplicación.
-    * **data** → Datos iniciales para usar en la aplicación.
-        * **img**
-            * chart.png → imagen cabecera de los pdf
-        * clientes_20.csv
-        * clientes_200.csv
-        * clientes_2000.csv
-        * empleados_20.csv
-        * empleados_200.csv
-        * empleados_200.csv
+* [**Programa_Jar**](https://github.com/QuiniRoizPagador/MetaheuristicsFinalWork/tree/master/Programa_Jar) → Carpeta con lo necesario para ejecutar la aplicación.
+    * [**data**](https://github.com/QuiniRoizPagador/MetaheuristicsFinalWork/tree/master/Programa_Jar/data) → Datos iniciales para usar en la aplicación.
+        * [**img**](https://github.com/QuiniRoizPagador/MetaheuristicsFinalWork/tree/master/Programa_Jar/data/img)
+            * [chart.png](https://github.com/QuiniRoizPagador/MetaheuristicsFinalWork/blob/master/Programa_Jar/data/img/chart.png) → imagen cabecera de los pdf
+        * [clientes_20.csv](https://github.com/QuiniRoizPagador/MetaheuristicsFinalWork/blob/master/Programa_Jar/data/clientes_20.csv)
+        * [clientes_200.csv](https://github.com/QuiniRoizPagador/MetaheuristicsFinalWork/blob/master/Programa_Jar/data/clientes_200.csv)
+        * [clientes_2000.csv](https://github.com/QuiniRoizPagador/MetaheuristicsFinalWork/blob/master/Programa_Jar/data/clientes_2000.csv)
+        * [empleados_20.csv](https://github.com/QuiniRoizPagador/MetaheuristicsFinalWork/blob/master/Programa_Jar/data/empleados_20.csv)
+        * [empleados_200.csv](https://github.com/QuiniRoizPagador/MetaheuristicsFinalWork/blob/master/Programa_Jar/data/empleados_200.csv)
+        * [empleados_200.csv](https://github.com/QuiniRoizPagador/MetaheuristicsFinalWork/blob/master/Programa_Jar/data/empleados_2000.csv)
     * **javadoc** → Documentación para el código y cada una de las funciones.
     * **lib** → Las librerías externas que se usan.
     * **reports** → Lugar donde se almacenarán los informes.
