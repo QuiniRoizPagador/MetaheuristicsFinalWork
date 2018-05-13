@@ -20,15 +20,15 @@ Se dispone de una documentación, así como una presentacion que explica el cont
         * [empleados_20.csv](https://github.com/QuiniRoizPagador/MetaheuristicsFinalWork/blob/master/Programa_Jar/data/empleados_20.csv)
         * [empleados_200.csv](https://github.com/QuiniRoizPagador/MetaheuristicsFinalWork/blob/master/Programa_Jar/data/empleados_200.csv)
         * [empleados_200.csv](https://github.com/QuiniRoizPagador/MetaheuristicsFinalWork/blob/master/Programa_Jar/data/empleados_2000.csv)
-    * **javadoc** → Documentación para el código y cada una de las funciones.
-    * **lib** → Las librerías externas que se usan.
-    * **reports** → Lugar donde se almacenarán los informes.
-        * pdf → Informes en PDF.
-        * txt → Informes en TXT.
-    * **Metaheuristics_EB_Final.jar** → Fichero jar que ejecutará el programa.
-    * **PROYECTO_JAVA_ALGORITMICA_II** → Proyecto en Java para importar directamente al IDE.
-    * **Documentation_Metaheuristics.pdf** → Documentación con la experimentación, investigación y conclusiones.
-    * **Presentation_Metaheuristics.pdf** → PDF con la presentación para explicar el contenido de la documentación.
+    * [**javadoc**](https://github.com/QuiniRoizPagador/MetaheuristicsFinalWork/tree/master/Programa_Jar/javadoc) → Documentación para el código y cada una de las funciones.
+    * [**lib**](https://github.com/QuiniRoizPagador/MetaheuristicsFinalWork/tree/master/Programa_Jar/lib) → Las librerías externas que se usan.
+    * [**reports**](https://github.com/QuiniRoizPagador/MetaheuristicsFinalWork/tree/master/Programa_Jar/reports) → Lugar donde se almacenarán los informes.
+        * [**pdf**](https://github.com/QuiniRoizPagador/MetaheuristicsFinalWork/tree/master/Programa_Jar/reports/pdf) → Informes en PDF.
+        * [**txt**](https://github.com/QuiniRoizPagador/MetaheuristicsFinalWork/tree/master/Programa_Jar/reports/pdf) → Informes en TXT.
+    * [Metaheuristics_EB_Final.jar](https://github.com/QuiniRoizPagador/MetaheuristicsFinalWork/blob/master/Programa_Jar/Metaheuristics_EB_Final.jar) → Fichero jar que ejecutará el programa.
+    * [**PROYECTO_JAVA_ALGORITMICA_II**](https://github.com/QuiniRoizPagador/MetaheuristicsFinalWork/tree/master/PROYECTO_JAVA_ALGORITMICA_II) → Proyecto en Java para importar directamente al IDE.
+    * [Documentation_Metaheuristics.pdf](https://github.com/QuiniRoizPagador/MetaheuristicsFinalWork/blob/master/Documentation_Metaheuristics.pdf) → Documentación con la experimentación, investigación y conclusiones.
+    * [Presentation_Metaheuristics.pdf](https://github.com/QuiniRoizPagador/MetaheuristicsFinalWork/blob/master/Presentation_Metaheuristics.pdf) → PDF con la presentación para explicar el contenido de la documentación.
 ## Ejecución
 --------------------
 1. Ejecutar Metaheuristics_EB_Final.jar
