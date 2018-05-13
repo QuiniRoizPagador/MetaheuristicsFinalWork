@@ -12,7 +12,7 @@ Se dispone de una documentación, así como una presentacion que explica el cont
 
 * **Joaquín Roiz Pagador** 
 
-![Alt Text]((https://github.com/QuiniRoizPagador/MetaheuristicsFinalWork/blob/master/graphic.gif)
+![](https://github.com/QuiniRoizPagador/MetaheuristicsFinalWork/blob/master/graphic.gif)
 
 ## License
  * [MIT License](https://github.com/QuiniRoizPagador/MetaheuristicsFinalWork/blob/master/LICENSE)
