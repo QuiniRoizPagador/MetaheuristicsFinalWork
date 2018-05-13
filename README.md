@@ -28,7 +28,7 @@ Se dispone de una documentación, así como una presentacion que explica el cont
         * pdf → Informes en PDF.
         * txt → Informes en TXT.
     * **Metaheuristics_EB_Final.jar** → Fichero jar que ejecutará el programa.
-    * **PROYECTO_JAVA_ALGORITMICA_ii** → Proyecto en Java para importar directamente al IDE. 
+    * **PROYECTO_JAVA_ALGORITMICA_II** → Proyecto en Java para importar directamente al IDE. 
     * **Documentation_Metaheuristics.pdf** → Documentación con la experimentación, investigación y conclusiones.
     * **Presentation_Metaheuristics.pdf** → PDF con la presentación para explicar el contenido de la documentación.
 ## Ejecución
