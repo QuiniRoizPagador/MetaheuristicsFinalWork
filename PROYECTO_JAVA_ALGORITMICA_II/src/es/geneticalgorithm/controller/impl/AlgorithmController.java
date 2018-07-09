@@ -27,12 +27,12 @@ public class AlgorithmController extends AbstractController<IAlgorithmService, I
     }
 
     @Override
-    public void selectProblemType(int algType, boolean async) throws CloneNotSupportedException {
+    public void selectProblemType(int algType, boolean async) throws CloneNotSupportedException, UnsupportedOperationException {
         model.prepare(algType, async);
     }
 
     @Override
-    public void executeAlgorithm() {
+    public void executeAlgorithm() throws UnsupportedOperationException {
         try {
             model.executeAlgorithm();
         } catch (InterruptedException ex) {

@@ -41,7 +41,7 @@ public class AlgorithmService extends AbstractModel<IAlgorithmController> implem
     }
 
     @Override
-    public void executeAlgorithm() throws InterruptedException {
+    public void executeAlgorithm() throws InterruptedException, UnsupportedOperationException {
         service = Executors.newSingleThreadExecutor();
         service.execute((Runnable) alg);
     }
@@ -52,7 +52,7 @@ public class AlgorithmService extends AbstractModel<IAlgorithmController> implem
     }
 
     @Override
-    public void prepare(int algType, boolean async) throws CloneNotSupportedException {
+    public void prepare(int algType, boolean async) throws CloneNotSupportedException, UnsupportedOperationException {
         alg = AlgorithmFactory.createAlgorithm(algType, this, async);
         notifyStarted();
     }

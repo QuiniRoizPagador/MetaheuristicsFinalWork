@@ -26,6 +26,7 @@ import es.geneticalgorithm.model.persistence.MemoryData;
 import es.geneticalgorithm.model.report.ReportIndividual;
 import es.geneticalgorithm.model.service.IAlgorithmService;
 import es.geneticalgorithm.util.Utils;
+import javax.swing.JFrame;
 
 /**
  * Vista principal de la aplicación.
@@ -99,7 +100,7 @@ public class View extends AbstractView<IAlgorithmService, AlgorithmController> {
 
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        cbAlgoritmo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Genético", "Enfriamiento Simulado", "Memético" }));
+        cbAlgoritmo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Genético", "Enfriamiento Simulado", "Memético", "Red Neuronal" }));
         cbAlgoritmo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cbAlgoritmoActionPerformed(evt);
@@ -276,8 +277,10 @@ public class View extends AbstractView<IAlgorithmService, AlgorithmController> {
                 controllers.get(0).selectProblemType(algType, cbAsync.isSelected());
                 controllers.get(0).executeAlgorithm();
                 lblFinish.setText("Ejecutando algoritmo...");
-            } catch (CloneNotSupportedException ex) {
-                Logger.getLogger(View.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (CloneNotSupportedException | UnsupportedOperationException ex) {
+                JOptionPane.showMessageDialog(new JFrame(), ex.getMessage(), "Error",
+                        JOptionPane.ERROR_MESSAGE);
+                changeEnable(true);
             }
         }
     }//GEN-LAST:event_btnEjecutarActionPerformed
@@ -292,6 +295,9 @@ public class View extends AbstractView<IAlgorithmService, AlgorithmController> {
                 break;
             case 2:
                 algType = Utils.MEMETIC_ALGORITHM_TYPE;
+                break;
+            case 3:
+                algType = Utils.NEURAL_NETWORK_ALGORITHM_TYPE;
                 break;
         }
 
@@ -418,7 +424,8 @@ public class View extends AbstractView<IAlgorithmService, AlgorithmController> {
                 desktop.open(file);
             }
         } catch (Exception ex) {
-            Logger.getLogger(View.class.getName()).log(Level.SEVERE, null, ex);
+            JOptionPane.showMessageDialog(new JFrame(), ex.getMessage(), "Error",
+                        JOptionPane.ERROR_MESSAGE);
         }
         changeEnable(true);
         lblFinish.setText("Finished!");

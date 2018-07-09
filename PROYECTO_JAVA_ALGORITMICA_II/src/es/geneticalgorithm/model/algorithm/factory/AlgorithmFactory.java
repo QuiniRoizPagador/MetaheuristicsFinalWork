@@ -11,6 +11,7 @@ import es.geneticalgorithm.model.algorithm.Algorithm;
 import es.geneticalgorithm.model.algorithm.genetic.GeneticAlgorithm;
 import es.geneticalgorithm.model.algorithm.localsearch.trayectories.SimulatedAnnealing;
 import es.geneticalgorithm.model.algorithm.hibrids.MemeticAlgorithm;
+import es.geneticalgorithm.model.algorithm.neuralnetwork.Mind;
 import es.geneticalgorithm.model.service.IAlgorithmService;
 import es.geneticalgorithm.util.Utils;
 
@@ -38,7 +39,7 @@ public class AlgorithmFactory {
      *
      * @see IAlgorithmService
      */
-    public static Algorithm createAlgorithm(int algorithm, IAlgorithmService m, boolean async) throws CloneNotSupportedException {
+    public static Algorithm createAlgorithm(int algorithm, IAlgorithmService m, boolean async) throws CloneNotSupportedException, UnsupportedOperationException {
         Algorithm al = null;
         switch (algorithm) {
             case Utils.SIMULATED_ANNEALING_TYPE:
@@ -49,6 +50,9 @@ public class AlgorithmFactory {
                 break;
             case Utils.MEMETIC_ALGORITHM_TYPE:
                 al = new MemeticAlgorithm(async);
+                break;
+            case Utils.NEURAL_NETWORK_ALGORITHM_TYPE:
+                al = new Mind();
                 break;
         }
         // prepara los datos para el algoritmo
