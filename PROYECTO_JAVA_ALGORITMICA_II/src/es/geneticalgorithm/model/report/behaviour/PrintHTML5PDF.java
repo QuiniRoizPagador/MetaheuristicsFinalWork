@@ -21,22 +21,19 @@ import com.itextpdf.tool.xml.pipeline.css.CssResolverPipeline;
 import com.itextpdf.tool.xml.pipeline.end.PdfWriterPipeline;
 import com.itextpdf.tool.xml.pipeline.html.HtmlPipeline;
 import com.itextpdf.tool.xml.pipeline.html.HtmlPipelineContext;
-import java.io.ByteArrayInputStream;
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.OutputStream;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 import es.geneticalgorithm.model.Cliente;
 import es.geneticalgorithm.model.Empleado;
 import es.geneticalgorithm.model.persistence.MemoryData;
 import es.geneticalgorithm.model.report.ReportIndividual;
 import es.geneticalgorithm.model.report.behaviour.helpers.HeaderFooterPageEvent;
 import es.geneticalgorithm.util.Utils;
+
+import java.io.ByteArrayInputStream;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.OutputStream;
+import java.text.SimpleDateFormat;
+import java.util.*;
 
 /**
  * Implementación del comportamiento de impresión en PDF utilizando plantilla

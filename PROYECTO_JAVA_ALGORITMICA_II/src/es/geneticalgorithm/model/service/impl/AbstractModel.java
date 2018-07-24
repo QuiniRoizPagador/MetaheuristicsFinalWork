@@ -7,8 +7,8 @@
  */
 package es.geneticalgorithm.model.service.impl;
 
-import es.geneticalgorithm.model.service.IModel;
 import es.geneticalgorithm.controller.IController;
+import es.geneticalgorithm.model.service.IModel;
 
 /**
  * Clase abstracta para los modelos.

@@ -7,14 +7,15 @@
  */
 package es.geneticalgorithm.model.algorithm.individuals;
 
+import es.geneticalgorithm.model.Cliente;
+import es.geneticalgorithm.model.algorithm.individuals.behaviours.MedicalBehaviour;
+import es.geneticalgorithm.model.persistence.MemoryData;
+
 import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 import java.util.stream.Collectors;
-import es.geneticalgorithm.model.Cliente;
-import es.geneticalgorithm.model.algorithm.individuals.behaviours.MedicalBehaviour;
-import es.geneticalgorithm.model.persistence.MemoryData;
 
 /**
  * Clase Individual para problemas de asignación cuadrática sin utilizar

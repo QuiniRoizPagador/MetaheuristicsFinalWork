@@ -11,6 +11,7 @@ import es.geneticalgorithm.controller.IAlgorithmController;
 import es.geneticalgorithm.controller.IController;
 import es.geneticalgorithm.model.algorithm.IAlgorithm;
 import es.geneticalgorithm.model.algorithm.individuals.AbstractIndividual;
+
 import java.util.Observer;
 
 /**
@@ -52,7 +53,7 @@ public interface IAlgorithmService<C extends IAlgorithmController> extends Obser
      * @throws java.lang.InterruptedException en caso de error de ejecución del
      * algoritmo
      */
-    void executeAlgorithm() throws InterruptedException;
+    void executeAlgorithm() throws Exception;
 
     /**
      * Devuelve una referencia al algoritmo en ejecución.
@@ -88,5 +89,10 @@ public interface IAlgorithmService<C extends IAlgorithmController> extends Obser
      * @param nMedicos tamaño de los médicos a leer.
      */
     void readData(int nPacientes, int nMedicos);
+
+    /**
+     * Forzará al algoritmo en cuestión a parar.
+     */
+    void stopEjecutation();
 
 }

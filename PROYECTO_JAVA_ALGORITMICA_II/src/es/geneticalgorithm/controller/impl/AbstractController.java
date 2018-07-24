@@ -10,6 +10,7 @@ package es.geneticalgorithm.controller.impl;
 import es.geneticalgorithm.controller.IController;
 import es.geneticalgorithm.model.service.IModel;
 import es.geneticalgorithm.view.IView;
+
 import java.util.LinkedList;
 import java.util.List;
 
@@ -25,7 +26,7 @@ import java.util.List;
 public abstract class AbstractController<M extends IModel, V extends IView> implements IController<V, M> {
 
     protected M model;
-    protected final List<V> views = new LinkedList<>();
+    final List<V> views = new LinkedList<>();
 
     @Override
     public void start() {
@@ -41,7 +42,7 @@ public abstract class AbstractController<M extends IModel, V extends IView> impl
         model.setController(this);
     }
 
-    protected void addViews(List<V> views) {
+    void addViews(List<V> views) {
         views.forEach((view) -> {
             addView(view);
         });

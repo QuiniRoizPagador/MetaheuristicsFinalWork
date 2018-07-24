@@ -8,11 +8,12 @@
 package es.geneticalgorithm.model.algorithm.localsearch.trayectories;
 
 import es.geneticalgorithm.model.algorithm.individuals.AbstractIndividual;
+import es.geneticalgorithm.model.algorithm.localsearch.HillClimbing;
+
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import es.geneticalgorithm.model.algorithm.localsearch.HillClimbing;
 
 /**
  * Algoritmo basado en trayectorias que buscará en un número de iteraciones

@@ -9,11 +9,12 @@ package es.geneticalgorithm.model.algorithm.factory;
 
 import es.geneticalgorithm.model.algorithm.Algorithm;
 import es.geneticalgorithm.model.algorithm.genetic.GeneticAlgorithm;
-import es.geneticalgorithm.model.algorithm.localsearch.trayectories.SimulatedAnnealing;
 import es.geneticalgorithm.model.algorithm.hibrids.MemeticAlgorithm;
+import es.geneticalgorithm.model.algorithm.localsearch.trayectories.SimulatedAnnealing;
 import es.geneticalgorithm.model.algorithm.neuralnetwork.Mind;
 import es.geneticalgorithm.model.service.IAlgorithmService;
 import es.geneticalgorithm.util.Utils;
+import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
 /**
  * Clase que utiliza el patrón factoría, creando un algoritmo específico a
@@ -54,6 +55,8 @@ public class AlgorithmFactory {
             case Utils.NEURAL_NETWORK_ALGORITHM_TYPE:
                 al = new Mind();
                 break;
+                default:
+                    throw new NotImplementedException();
         }
         // prepara los datos para el algoritmo
         al.prepare();

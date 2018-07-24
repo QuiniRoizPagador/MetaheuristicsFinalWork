@@ -7,11 +7,12 @@
  */
 package es.geneticalgorithm.view;
 
-import es.geneticalgorithm.controller.impl.AbstractController;
 import es.geneticalgorithm.controller.IController;
+import es.geneticalgorithm.controller.impl.AbstractController;
 import es.geneticalgorithm.model.algorithm.individuals.AbstractIndividual;
 import es.geneticalgorithm.model.service.IAlgorithmService;
 import es.geneticalgorithm.model.service.IModel;
+
 import java.util.ArrayList;
 import java.util.List;
 

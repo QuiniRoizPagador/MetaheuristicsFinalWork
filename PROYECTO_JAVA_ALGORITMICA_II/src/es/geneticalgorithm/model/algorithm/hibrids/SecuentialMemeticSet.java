@@ -8,12 +8,13 @@
 package es.geneticalgorithm.model.algorithm.hibrids;
 
 import es.geneticalgorithm.model.algorithm.genetic.AsyncPopulation;
-import java.util.LinkedList;
-import java.util.List;
 import es.geneticalgorithm.model.algorithm.genetic.SecuentialPopulation;
 import es.geneticalgorithm.model.algorithm.individuals.AbstractIndividual;
 import es.geneticalgorithm.model.algorithm.localsearch.trayectories.SimulatedAnnealing;
+
 import java.util.Collections;
+import java.util.LinkedList;
+import java.util.List;
 
 /**
  * Clase conjunto que extenderá de una población para los algoritmos híbridos.

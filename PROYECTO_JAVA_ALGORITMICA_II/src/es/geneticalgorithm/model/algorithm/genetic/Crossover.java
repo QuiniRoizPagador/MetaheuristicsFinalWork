@@ -7,11 +7,12 @@
  */
 package es.geneticalgorithm.model.algorithm.genetic;
 
-import java.util.Random;
-import es.geneticalgorithm.model.algorithm.individuals.AbstractIndividual;
 import es.geneticalgorithm.model.algorithm.genetic.behaviours.BinaryCrossover;
 import es.geneticalgorithm.model.algorithm.genetic.behaviours.CrossoverStrategy;
+import es.geneticalgorithm.model.algorithm.individuals.AbstractIndividual;
 import es.geneticalgorithm.util.Utils;
+
+import java.util.Random;
 
 /**
  * Clase que se encargará de cruzar y mutar individuos

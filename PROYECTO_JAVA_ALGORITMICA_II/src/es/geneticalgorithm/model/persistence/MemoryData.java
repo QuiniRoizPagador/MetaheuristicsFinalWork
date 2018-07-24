@@ -7,15 +7,12 @@
  */
 package es.geneticalgorithm.model.persistence;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import es.geneticalgorithm.model.persistence.readers.EmployeesReader;
-import es.geneticalgorithm.model.persistence.readers.ClientReader;
-import java.util.List;
-import java.util.Observable;
 import es.geneticalgorithm.model.Cliente;
 import es.geneticalgorithm.model.Empleado;
+import es.geneticalgorithm.model.persistence.readers.ClientReader;
+import es.geneticalgorithm.model.persistence.readers.EmployeesReader;
+
+import java.util.*;
 
 /**
  * Clase Singleton que contendrá objetos con los que trabajar en memoria
@@ -27,7 +24,7 @@ public class MemoryData extends Observable {
 
     private List<Cliente> clients;
     private List<Empleado> employees;
-    private Float[][] distances;
+    private Double[][] distances;
     private static MemoryData instance;
     private double worstDist;
     private double worstCost;
@@ -63,7 +60,7 @@ public class MemoryData extends Observable {
      *
      * @return la matriz de las distancias
      */
-    public Float[][] getDistances() {
+    public Double[][] getDistances() {
         return distances;
     }
 
@@ -91,20 +88,20 @@ public class MemoryData extends Observable {
         }
         if (leido) {
             // calculo la matriz distancias
-            distances = new Float[clients.size()][employees.size()];
+            distances = new Double[clients.size()][employees.size()];
             for (int i = 0; i < clients.size(); i++) {
                 for (int j = 0; j < employees.size(); j++) {
-                    distances[i][j] = (float) (Math.sqrt(Math.pow(clients.get(i).getDir_x() - employees.get(j).getDir_x(), 2)
+                    distances[i][j] = (double) (Math.sqrt(Math.pow(clients.get(i).getDir_x() - employees.get(j).getDir_x(), 2)
                                 + Math.pow(clients.get(i).getDir_y() - employees.get(j).getDir_y(), 2)));
                 }
             }
             // calculo el peor coste
-            worstCost = employees.parallelStream().mapToDouble((e) -> e.getCoste()).sum();
+            worstCost = employees.parallelStream().mapToDouble(Empleado::getCoste).sum();
             worstDist = 0;
             // calculo la peor distancia
             for (int i = 0; i < clients.size(); i++) {
-                Float[] d = distances[i];
-                List<Float> aux = Arrays.asList(d);
+                Double[] d = distances[i];
+                List<Double> aux = Arrays.asList(d);
                 worstDist += Collections.max(aux);
             }
         }

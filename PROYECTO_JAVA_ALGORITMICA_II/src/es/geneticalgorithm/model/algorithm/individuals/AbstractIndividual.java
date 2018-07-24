@@ -7,11 +7,12 @@
  */
 package es.geneticalgorithm.model.algorithm.individuals;
 
+import es.geneticalgorithm.model.algorithm.individuals.behaviours.FitnessBehaviour;
+import es.geneticalgorithm.model.persistence.MemoryData;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
-import es.geneticalgorithm.model.algorithm.individuals.behaviours.FitnessBehaviour;
-import es.geneticalgorithm.model.persistence.MemoryData;
 
 /**
  * Clase Individual que compondrá las principales características de un

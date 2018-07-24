@@ -11,6 +11,7 @@ import es.geneticalgorithm.controller.IReportController;
 import es.geneticalgorithm.model.report.ReportIndividual;
 import es.geneticalgorithm.model.service.IReportService;
 import es.geneticalgorithm.view.IView;
+
 import java.util.List;
 
 /**

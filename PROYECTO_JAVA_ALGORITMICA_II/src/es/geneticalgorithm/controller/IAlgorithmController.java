@@ -41,7 +41,7 @@ public interface IAlgorithmController<M extends IAlgorithmService, V extends IVi
     /**
      * Ejecutará el algoritmo previamente preparado.
      */
-    void executeAlgorithm();
+    void executeAlgorithm()throws Exception;
 
     /**
      * Leerá los datos recibidos por parámetros en la clase MemoryData del

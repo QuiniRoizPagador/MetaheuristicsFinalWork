@@ -10,6 +10,7 @@ package es.geneticalgorithm.model.algorithm.genetic;
 import es.geneticalgorithm.model.algorithm.individuals.AbstractIndividual;
 import es.geneticalgorithm.model.algorithm.individuals.SyncQuadraticIndividual;
 import es.geneticalgorithm.util.Utils;
+
 import java.util.ArrayList;
 
 /**

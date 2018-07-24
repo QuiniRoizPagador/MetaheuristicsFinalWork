@@ -7,12 +7,13 @@
  */
 package es.geneticalgorithm.model.algorithm.hibrids;
 
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import es.geneticalgorithm.model.algorithm.genetic.GeneticAlgorithm;
 import es.geneticalgorithm.model.algorithm.individuals.AbstractIndividual;
 import es.geneticalgorithm.model.persistence.MemoryData;
 import es.geneticalgorithm.util.Utils;
+
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  * Clase similar al algoritmo genético que introduce un algoritmo de búsqueda

@@ -7,8 +7,9 @@
  */
 package es.geneticalgorithm.model.algorithm.genetic;
 
-import java.util.List;
 import es.geneticalgorithm.model.algorithm.individuals.AbstractIndividual;
+
+import java.util.List;
 
 /**
  * Interfaz que representa las acciones que puede realizar una población para un

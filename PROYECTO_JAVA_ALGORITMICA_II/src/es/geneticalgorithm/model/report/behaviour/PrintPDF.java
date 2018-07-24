@@ -7,29 +7,21 @@
  */
 package es.geneticalgorithm.model.report.behaviour;
 
-import com.itextpdf.text.Chunk;
-import com.itextpdf.text.Document;
-import com.itextpdf.text.Font;
-import com.itextpdf.text.Image;
-import com.itextpdf.text.PageSize;
-import com.itextpdf.text.Paragraph;
-import com.itextpdf.text.Phrase;
+import com.itextpdf.text.*;
 import com.itextpdf.text.pdf.BaseFont;
 import com.itextpdf.text.pdf.PdfPCell;
 import com.itextpdf.text.pdf.PdfPTable;
 import com.itextpdf.text.pdf.PdfWriter;
-import java.io.FileOutputStream;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 import es.geneticalgorithm.model.Cliente;
 import es.geneticalgorithm.model.Empleado;
 import es.geneticalgorithm.model.persistence.MemoryData;
 import es.geneticalgorithm.model.report.ReportIndividual;
 import es.geneticalgorithm.util.Utils;
+
+import java.io.FileOutputStream;
+import java.text.SimpleDateFormat;
+import java.util.*;
+import java.util.List;
 
 /**
  * Implementación del comportamiento de exportar en PDF estándar.

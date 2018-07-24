@@ -8,6 +8,7 @@
 package es.geneticalgorithm.model.algorithm.genetic;
 
 import es.geneticalgorithm.model.algorithm.individuals.AbstractIndividual;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;

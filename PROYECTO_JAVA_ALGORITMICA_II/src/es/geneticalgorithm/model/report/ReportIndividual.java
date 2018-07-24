@@ -7,8 +7,9 @@
  */
 package es.geneticalgorithm.model.report;
 
-import java.util.Calendar;
 import es.geneticalgorithm.model.algorithm.individuals.AbstractIndividual;
+
+import java.util.Calendar;
 
 /**
  * Clase que almacenará los datos de una solución a imprimir

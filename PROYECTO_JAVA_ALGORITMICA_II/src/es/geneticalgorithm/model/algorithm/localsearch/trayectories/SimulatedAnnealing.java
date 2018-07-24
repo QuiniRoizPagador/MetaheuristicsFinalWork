@@ -7,13 +7,14 @@
  */
 package es.geneticalgorithm.model.algorithm.localsearch.trayectories;
 
+import es.geneticalgorithm.model.algorithm.individuals.AbstractIndividual;
 import es.geneticalgorithm.model.algorithm.individuals.AsyncQuadraticIndividual;
+import es.geneticalgorithm.model.algorithm.individuals.SyncQuadraticIndividual;
 import es.geneticalgorithm.model.algorithm.localsearch.HillClimbing;
+import es.geneticalgorithm.model.persistence.MemoryData;
+
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import es.geneticalgorithm.model.algorithm.individuals.AbstractIndividual;
-import es.geneticalgorithm.model.algorithm.individuals.SyncQuadraticIndividual;
-import es.geneticalgorithm.model.persistence.MemoryData;
 
 /**
  * Algoritmo de búsqueda local Enfriamiento Simulado, el cual utilizará las

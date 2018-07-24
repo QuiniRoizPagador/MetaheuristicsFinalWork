@@ -7,8 +7,9 @@
  */
 package es.geneticalgorithm.model.algorithm.individuals.behaviours;
 
-import java.util.List;
 import es.geneticalgorithm.model.persistence.MemoryData;
+
+import java.util.List;
 
 /**
  * Clase que implementa el comportamiento de los fitness para un cálculo

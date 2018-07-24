@@ -7,14 +7,15 @@
  */
 package es.geneticalgorithm.model.algorithm.genetic.behaviours;
 
-import es.geneticalgorithm.model.algorithm.individuals.AsyncQuadraticIndividual;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
 import es.geneticalgorithm.model.algorithm.individuals.AbstractIndividual;
+import es.geneticalgorithm.model.algorithm.individuals.AsyncQuadraticIndividual;
 import es.geneticalgorithm.model.algorithm.individuals.SyncQuadraticIndividual;
 import es.geneticalgorithm.model.persistence.MemoryData;
 import es.geneticalgorithm.util.Utils;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
 
 /**
  * Implementación del comportamiento de cruce para cruces binarios, donde las

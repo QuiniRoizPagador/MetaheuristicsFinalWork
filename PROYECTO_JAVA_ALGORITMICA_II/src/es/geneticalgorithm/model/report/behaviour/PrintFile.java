@@ -7,11 +7,12 @@
  */
 package es.geneticalgorithm.model.report.behaviour;
 
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
 import es.geneticalgorithm.model.persistence.FileManager;
 import es.geneticalgorithm.model.report.ReportIndividual;
 import es.geneticalgorithm.util.Utils;
+
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 
 /**
  * Implementación del comportamiento de impresión en txt

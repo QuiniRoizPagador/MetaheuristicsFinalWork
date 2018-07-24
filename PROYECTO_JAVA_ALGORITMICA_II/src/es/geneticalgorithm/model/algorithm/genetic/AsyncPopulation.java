@@ -7,11 +7,12 @@
  */
 package es.geneticalgorithm.model.algorithm.genetic;
 
-import java.util.List;
-import java.util.stream.Collectors;
 import es.geneticalgorithm.model.algorithm.individuals.AbstractIndividual;
 import es.geneticalgorithm.model.algorithm.individuals.SyncQuadraticIndividual;
 import es.geneticalgorithm.util.Utils;
+
+import java.util.List;
+import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 /**

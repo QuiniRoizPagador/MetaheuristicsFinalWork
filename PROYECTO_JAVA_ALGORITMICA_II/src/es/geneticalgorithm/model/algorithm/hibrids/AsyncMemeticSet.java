@@ -7,14 +7,15 @@
  */
 package es.geneticalgorithm.model.algorithm.hibrids;
 
+import es.geneticalgorithm.model.algorithm.genetic.AsyncPopulation;
+import es.geneticalgorithm.model.algorithm.individuals.AbstractIndividual;
+import es.geneticalgorithm.model.algorithm.localsearch.trayectories.SimulatedAnnealing;
+
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.stream.Collectors;
-import es.geneticalgorithm.model.algorithm.genetic.AsyncPopulation;
-import es.geneticalgorithm.model.algorithm.individuals.AbstractIndividual;
-import es.geneticalgorithm.model.algorithm.localsearch.trayectories.SimulatedAnnealing;
 
 /**
  * Clase conjunto que extenderá de una población para los algoritmos híbridos y

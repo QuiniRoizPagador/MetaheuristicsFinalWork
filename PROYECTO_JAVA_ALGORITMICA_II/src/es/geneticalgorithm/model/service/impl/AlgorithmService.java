@@ -7,14 +7,15 @@
  */
 package es.geneticalgorithm.model.service.impl;
 
-import es.geneticalgorithm.model.service.IAlgorithmService;
 import es.geneticalgorithm.controller.IAlgorithmController;
 import es.geneticalgorithm.model.algorithm.IAlgorithm;
+import es.geneticalgorithm.model.algorithm.factory.AlgorithmFactory;
+import es.geneticalgorithm.model.persistence.MemoryData;
+import es.geneticalgorithm.model.service.IAlgorithmService;
+
 import java.util.Observable;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-import es.geneticalgorithm.model.algorithm.factory.AlgorithmFactory;
-import es.geneticalgorithm.model.persistence.MemoryData;
 
 /**
  * Clase que implementa la interfaz IAlgorithmService para el modelo de la
@@ -30,7 +31,6 @@ public class AlgorithmService extends AbstractModel<IAlgorithmController> implem
 
     private IAlgorithm alg;
     private ExecutorService service;
-
     public AlgorithmService() {
         MemoryData.getInstance().addObserver(this);
     }
@@ -41,7 +41,7 @@ public class AlgorithmService extends AbstractModel<IAlgorithmController> implem
     }
 
     @Override
-    public void executeAlgorithm() throws InterruptedException, UnsupportedOperationException {
+    public void executeAlgorithm() throws Exception {
         service = Executors.newSingleThreadExecutor();
         service.execute((Runnable) alg);
     }
@@ -70,6 +70,7 @@ public class AlgorithmService extends AbstractModel<IAlgorithmController> implem
     @Override
     public void notifyFinished() {
         controller.notifyFinished();
+        service = null;
     }
 
     @Override
@@ -80,6 +81,14 @@ public class AlgorithmService extends AbstractModel<IAlgorithmController> implem
     @Override
     public void readData(int nPacientes, int nMedicos) {
         MemoryData.getInstance().readData(nPacientes, nMedicos);
+    }
+
+    @Override
+    public void stopEjecutation() {
+        if(service != null){
+            service.shutdownNow();
+            notifyFinished();
+        }
     }
 
 }

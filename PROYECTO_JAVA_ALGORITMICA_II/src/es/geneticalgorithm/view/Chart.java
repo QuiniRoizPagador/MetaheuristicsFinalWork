@@ -9,17 +9,6 @@ package es.geneticalgorithm.view;
 
 import es.geneticalgorithm.controller.IController;
 import es.geneticalgorithm.controller.impl.AlgorithmController;
-import java.awt.BasicStroke;
-import java.awt.Color;
-import java.awt.Font;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.OutputStream;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import javax.swing.BorderFactory;
-import javax.swing.JFrame;
 import es.geneticalgorithm.model.algorithm.individuals.AbstractIndividual;
 import es.geneticalgorithm.model.service.IAlgorithmService;
 import org.jfree.chart.ChartFactory;
@@ -34,6 +23,15 @@ import org.jfree.chart.title.TextTitle;
 import org.jfree.data.xy.XYDataset;
 import org.jfree.data.xy.XYSeries;
 import org.jfree.data.xy.XYSeriesCollection;
+
+import javax.swing.*;
+import java.awt.*;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.OutputStream;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  * Vista secundaria de la aplicación.
@@ -56,6 +54,7 @@ public class Chart extends AbstractView<IAlgorithmService, AlgorithmController> 
     private final ChartPanel chartPanel;
     private double max = Double.POSITIVE_INFINITY;
     private boolean change;
+    private JPanel panel1;
 
     /**
      * Creates new form Chart
@@ -169,7 +168,7 @@ public class Chart extends AbstractView<IAlgorithmService, AlgorithmController> 
             chart.setNotify(true);
             change = false;
         }
-        if (best == null || ind.compareTo(best) < 0) {
+        if (ind != null && (best == null || ind.compareTo(best) < 0)) {
             best = ind;
             max = ind.getFitness();
             double time = (System.currentTimeMillis() - startTime) * 1E-3;

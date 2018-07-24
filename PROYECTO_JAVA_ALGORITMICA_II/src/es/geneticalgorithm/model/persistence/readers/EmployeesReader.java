@@ -7,14 +7,15 @@
  */
 package es.geneticalgorithm.model.persistence.readers;
 
+import es.geneticalgorithm.model.Empleado;
+import es.geneticalgorithm.model.persistence.FileManager;
+
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import es.geneticalgorithm.model.Empleado;
-import es.geneticalgorithm.model.persistence.FileManager;
 
 /**
  * Clase que lee instancias de empleados o médicos

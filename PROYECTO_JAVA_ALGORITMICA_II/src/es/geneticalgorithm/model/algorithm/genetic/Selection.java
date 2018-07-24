@@ -8,11 +8,12 @@
 package es.geneticalgorithm.model.algorithm.genetic;
 
 import es.geneticalgorithm.model.algorithm.individuals.AbstractIndividual;
+import es.geneticalgorithm.util.Utils;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Random;
-import es.geneticalgorithm.util.Utils;
 
 /**
  * Clase que se encarga de la selección de una población

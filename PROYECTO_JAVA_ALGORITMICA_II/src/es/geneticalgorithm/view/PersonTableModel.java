@@ -7,13 +7,14 @@
  */
 package es.geneticalgorithm.view;
 
-import java.util.ArrayList;
-import java.util.List;
+import es.geneticalgorithm.model.Cliente;
+import es.geneticalgorithm.model.Persona;
+
 import javax.swing.event.TableModelEvent;
 import javax.swing.event.TableModelListener;
 import javax.swing.table.TableModel;
-import es.geneticalgorithm.model.Cliente;
-import es.geneticalgorithm.model.Persona;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Clase modelo para una tabla de la vista principal.
@@ -50,7 +51,7 @@ public class PersonTableModel<E extends Persona> implements TableModel {
      * @see List
      * @see Cliente
      */
-    public void setPersona(List<E> data) {
+    void setPersona(List<E> data) {
         this.data = data;
         fireContentsChanged();
     }
@@ -134,7 +135,7 @@ public class PersonTableModel<E extends Persona> implements TableModel {
     /**
      * Disparador que actualizará los nuevos datos de la tabla.
      */
-    protected void fireContentsChanged() {
+    private void fireContentsChanged() {
         //TableModelEvent event = new TableModelEvent(this,0,getRowCount());
         TableModelEvent event = new TableModelEvent(this, 0, this.getRowCount() - 1, TableModelEvent.ALL_COLUMNS, TableModelEvent.INSERT);
         listeners.forEach((listener) -> {

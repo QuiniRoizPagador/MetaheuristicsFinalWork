@@ -32,7 +32,7 @@ public class AlgorithmController extends AbstractController<IAlgorithmService, I
     }
 
     @Override
-    public void executeAlgorithm() throws UnsupportedOperationException {
+    public void executeAlgorithm() throws Exception {
         try {
             model.executeAlgorithm();
         } catch (InterruptedException ex) {
