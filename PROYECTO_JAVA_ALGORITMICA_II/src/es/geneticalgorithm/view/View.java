@@ -34,12 +34,6 @@ import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartPanel;
 import org.jfree.chart.ChartUtilities;
 import org.jfree.chart.JFreeChart;
-import org.jfree.chart.block.BlockBorder;
-import org.jfree.chart.plot.PlotOrientation;
-import org.jfree.chart.plot.XYPlot;
-import org.jfree.chart.renderer.xy.XYLineAndShapeRenderer;
-import org.jfree.chart.title.TextTitle;
-import org.jfree.data.xy.XYDataset;
 import org.jfree.data.xy.XYSeries;
 import org.jfree.data.xy.XYSeriesCollection;
 
@@ -81,14 +75,16 @@ public class View extends AbstractView<IAlgorithmService, AlgorithmController> {
         seriesLine = new XYSeries("Fitnesss");
         datasetLine.addSeries(seriesLine);
         chart = ChartFactory.createXYLineChart("Mejoras", "", "", datasetLine);
+        chart.getPlot().setBackgroundPaint(Color.WHITE);
         chartPanel = new ChartPanel(chart);
-
+        
         datasetScatter = new XYSeriesCollection();
         serieScatterEmployees = new XYSeries("Empleados");
         serieScatterClients = new XYSeries("Clientes");
         datasetScatter.addSeries(serieScatterEmployees);
         datasetScatter.addSeries(serieScatterClients);
         chart2 = ChartFactory.createScatterPlot("Dispersión datos", "", "", datasetScatter);
+        chart2.getPlot().setBackgroundPaint(Color.WHITE);
         chartPanel2 = new ChartPanel(chart2);
         //chartPanel.setBorder(BorderFactory.createEmptyBorder(15, 15, 15, 15));
         //chartPanel.setBackground(Color.white);
@@ -560,7 +556,7 @@ public class View extends AbstractView<IAlgorithmService, AlgorithmController> {
                 lblFinish.setText("Finished!");
                 Toolkit.getDefaultToolkit().beep();
                 change = true;
-                int dialogButton = JOptionPane.showConfirmDialog(null, "¿Quieres exportar los resultados?\n Si Decides no hacerlo se perderán!!!", "Atención", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
+                int dialogButton = JOptionPane.showConfirmDialog(null, "¿Quieres exportar los resultados?\n Si decides no hacerlo se perderán!!!", "Atención", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
 
                 if (dialogButton == JOptionPane.YES_OPTION) { //The ISSUE is here
 

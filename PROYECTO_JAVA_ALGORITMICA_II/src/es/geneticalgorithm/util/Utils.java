@@ -124,6 +124,6 @@ public class Utils {
     public static final int N_ENTRIES = 3;
     public static final int N_HIDDEN_NEURONS = 3;
     public static final int N_OUTPUT_NEURONS = 3;
-    public static Double LEARNING_RATE = 0.01;
+    public static Double LEARNING_RATE = 0.005;
     
 }
