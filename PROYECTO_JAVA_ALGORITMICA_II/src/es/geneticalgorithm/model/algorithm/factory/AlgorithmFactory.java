@@ -50,8 +50,8 @@ public class AlgorithmFactory {
             case Utils.MEMETIC_ALGORITHM_TYPE:
                 al = new MemeticAlgorithm(async);
                 break;
-                default:
-                    throw new UnsupportedOperationException("Algoritmo no encontrado.");
+            default:
+                throw new UnsupportedOperationException("Algoritmo no implementado.");
         }
         // prepara los datos para el algoritmo
         al.prepare();

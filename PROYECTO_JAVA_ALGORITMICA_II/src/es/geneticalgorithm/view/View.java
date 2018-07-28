@@ -440,6 +440,7 @@ public class View extends AbstractView<IAlgorithmService, AlgorithmController> {
             } catch (Exception ex) {
                 JOptionPane.showMessageDialog(new JFrame(), ex.getMessage(), "Error",
                         JOptionPane.ERROR_MESSAGE);
+                lblFinish.setText("");
                 changeEnable(true);
             }
         }
