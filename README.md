@@ -41,14 +41,8 @@ Se dispone de una documentación, así como una presentacion que explica el cont
 
 ![](https://github.com/QuiniRoizPagador/MetaheuristicsFinalWork/blob/master/graphic.gif)
 
-## ACTUALIZACIÓN 27/07/2018
-
-Se han unificado las dos vistas anteriores y modernizado la interfaz, así como añadido un diagrama de dispersión que muestre el conjunto de puntos con los que se trabaja (posiciones de médicos y pacientes).
-
-![](https://github.com/QuiniRoizPagador/MetaheuristicsFinalWork/blob/master/newView.png)
-
 5. Una vez terminada la ejecución se abrirá el archivo PDF con el informe de la solución encontrada.
-5. Para observar el array de soluciones acceder a reports/txt y abrir el adecuado con el block de notas.
+6. Para observar el array de soluciones acceder a reports/txt y abrir el adecuado con el block de notas.
 
 ## Author
 
@@ -57,3 +51,12 @@ Se han unificado las dos vistas anteriores y modernizado la interfaz, así como 
 
 ## License
  * [MIT License](https://github.com/QuiniRoizPagador/MetaheuristicsFinalWork/blob/master/LICENSE)
+ * Todos los iconos utilizados en documentación y aplicación han sido obtenidos de [Flaticon](https://www.flaticon.com/)
+
+
+
+## ACTUALIZACIÓN 27/07/2018
+
+Se han unificado las dos vistas anteriores y modernizado la interfaz, así como añadido un diagrama de dispersión que muestre el conjunto de puntos con los que se trabaja (posiciones de médicos y pacientes).
+
+![](https://github.com/QuiniRoizPagador/MetaheuristicsFinalWork/blob/master/newView.png)
