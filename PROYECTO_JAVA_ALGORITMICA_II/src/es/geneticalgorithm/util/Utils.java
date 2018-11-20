@@ -94,7 +94,7 @@ public class Utils {
     public static final int ANT_COLONY_OPTIMIZATION = 3;
 
     public static final int MEMETIC_ALGORITHM_TYPE = 4;
-    
+
     public static final int NEURAL_NETWORK_ALGORITHM_TYPE = 5;
 
     public static final int REPORT_FILE_TYPE = 0;
@@ -124,6 +124,6 @@ public class Utils {
     public static final int N_ENTRIES = 3;
     public static final int N_HIDDEN_NEURONS = 3;
     public static final int N_OUTPUT_NEURONS = 3;
-    public static Double LEARNING_RATE = 0.005;
-    
+    public static Double LEARNING_RATE = 0.01;
+
 }

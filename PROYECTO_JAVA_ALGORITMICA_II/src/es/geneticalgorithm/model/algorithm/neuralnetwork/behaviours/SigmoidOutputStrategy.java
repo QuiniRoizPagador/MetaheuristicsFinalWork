@@ -14,7 +14,12 @@ public class SigmoidOutputStrategy implements OutputStrategy {
 
     @Override
     public Double output(Double x) {
-        return 1 / (1 + (Math.exp(-1.0 * x)));
+        return 1. / (1. + (Math.exp(-1.0 * x)));
+    }
+
+    @Override
+    public Double derivative(Double x) {
+        return x * (1.0 - x);
     }
 
 }

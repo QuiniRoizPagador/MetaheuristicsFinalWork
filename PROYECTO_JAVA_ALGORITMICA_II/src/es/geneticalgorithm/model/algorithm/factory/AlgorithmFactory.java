@@ -11,6 +11,7 @@ import es.geneticalgorithm.model.algorithm.Algorithm;
 import es.geneticalgorithm.model.algorithm.genetic.GeneticAlgorithm;
 import es.geneticalgorithm.model.algorithm.hibrids.MemeticAlgorithm;
 import es.geneticalgorithm.model.algorithm.localsearch.trayectories.SimulatedAnnealing;
+import es.geneticalgorithm.model.algorithm.neuralnetwork.NeuralNetworkAlgoritm;
 import es.geneticalgorithm.model.service.IAlgorithmService;
 import es.geneticalgorithm.util.Utils;
 
@@ -49,6 +50,9 @@ public class AlgorithmFactory {
                 break;
             case Utils.MEMETIC_ALGORITHM_TYPE:
                 al = new MemeticAlgorithm(async);
+                break;
+            case Utils.NEURAL_NETWORK_ALGORITHM_TYPE:
+                al = new NeuralNetworkAlgoritm(false);
                 break;
             default:
                 throw new UnsupportedOperationException("Algoritmo no implementado.");

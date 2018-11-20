@@ -10,16 +10,16 @@ package es.geneticalgorithm.model.algorithm.neuralnetwork.behaviours;
  *
  * @author Quini Roiz
  */
-public class HyperbolicTangentOutputStrategy implements OutputStrategy {
+public class RectifiedLinearUnitActivation implements OutputStrategy {
 
     @Override
     public Double output(Double x) {
-        return Math.tanh(x);
+        return Math.max(0, x);
     }
 
     @Override
     public Double derivative(Double x) {
-        return 1 - Math.pow(Math.tan(x), 2);
+        return x > 0 ? 1. : 0.;
     }
 
 }

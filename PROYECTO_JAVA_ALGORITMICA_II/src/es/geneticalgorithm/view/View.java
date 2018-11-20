@@ -425,9 +425,9 @@ public class View extends AbstractView<IAlgorithmService, AlgorithmController> {
     }//GEN-LAST:event_cbPacientesActionPerformed
 
     private void btnEjecutarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEjecutarActionPerformed
-        if (nMedicos < nPacientes) {
-            JOptionPane.showMessageDialog(this, "Error, con tan pocos médicos no podemos atenter tantos pacientes. Prueba con más médicos.");
-        } else {
+        /*if (nMedicos < nPacientes) {
+        JOptionPane.showMessageDialog(this, "Error, con tan pocos médicos no podemos atenter tantos pacientes. Prueba con más médicos.");
+        } else */{
             try {
                 changeEnable(false);
                 jProgressBar1.setValue(0);

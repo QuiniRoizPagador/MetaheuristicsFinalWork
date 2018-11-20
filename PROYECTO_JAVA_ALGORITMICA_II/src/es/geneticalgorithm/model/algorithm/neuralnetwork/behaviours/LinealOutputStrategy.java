@@ -17,4 +17,9 @@ public class LinealOutputStrategy implements OutputStrategy {
         return x >= 0.5 ? 1.0 : 0.0;
     }
 
+    @Override
+    public Double derivative(Double x) {
+        return 1.0;
+    }
+
 }

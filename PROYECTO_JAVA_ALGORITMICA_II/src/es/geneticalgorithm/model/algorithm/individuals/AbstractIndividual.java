@@ -172,10 +172,19 @@ public abstract class AbstractIndividual implements Comparable<AbstractIndividua
         fitnessBehaviour = fb;
     }
 
+    /**
+     * Método que actualiza el genotipo recibiéndolo por parámetros
+     *
+     * @param genotype genotipo nuevo
+     */
+    public void setGenotype(List<Integer> genotype) {
+        this.genotype = genotype;
+    }
+
     @Override
     public String toString() {
         return "\nGenotipo: " + genotype
-                    + " | Fitness: " + fitness;
+                + " | Fitness: " + fitness;
     }
 
     /**
@@ -184,4 +193,5 @@ public abstract class AbstractIndividual implements Comparable<AbstractIndividua
     public void getVecino() {
         mutate();
     }
+
 }

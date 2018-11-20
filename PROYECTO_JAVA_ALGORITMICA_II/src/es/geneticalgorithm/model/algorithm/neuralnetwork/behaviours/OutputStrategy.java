@@ -19,7 +19,17 @@ public interface OutputStrategy {
      *
      * @param x Sumatorio de los pesos por sus entradas más el bias.
      * @return Se devuelve la función aplicada a este resultado (sigmoide,
-     * tangenge hiperbólica...).
+     * tangenge hiperbólica...) o, en su caso, la derivada.
      */
     Double output(Double x);
+
+    /**
+     * Función que tomará la función derivada del perceptrón, basándose en el
+     * cálculo de los pesos y las entradas, junto con el bias.
+     *
+     * @param x Sumatorio de los pesos por sus entradas más el bias.
+     * @return Se devuelve la función derivada aplicada a este resultado
+     * (sigmoide, tangenge hiperbólica...).
+     */
+    Double derivative(Double x);
 }
