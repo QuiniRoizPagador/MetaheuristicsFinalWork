@@ -6,84 +6,82 @@
 package es.geneticalgorithm.model.algorithm.neuralnetwork;
 
 import es.geneticalgorithm.model.algorithm.neuralnetwork.behaviours.OutputStrategy;
-import java.util.Random;
-import java.util.stream.IntStream;
 
 /**
- * Clase Perceptrón que representa una neurona y su aprendizaje.
+ * Interfaz Perceptrón que representa neurona
  *
  * @author Quini Roiz
  */
-public class Perceptron {
+public interface Perceptron {
 
-    private double[] weights;
-    private double bias;
-    private double output;
-    private final OutputStrategy outputStrategy;
-    private double error;
-    private double derivate;
-    private double x;
+    /**
+     * Método que calcula la salida función de activación de la neurona en
+     * función de sus entradas y pesos
+     *
+     * @param entries entradas
+     * @return función de activación
+     */
+    double output(double... entries);
 
-    public Perceptron(int nEntries, OutputStrategy outputStrategy) {
-        this.outputStrategy = outputStrategy;
-        weights = new double[nEntries];
-        Random rn = new Random();
-        IntStream.range(0, nEntries)
-                .forEach((t) -> {
-                    weights[t] = rn.nextDouble();
-                });
-        bias = 1.0;
-    }
+    /**
+     * Limpiar pesos
+     */
+    void erase();
 
-    public double output(double... entries) {
-        x = IntStream
-                .range(0, entries.length)
-                .mapToDouble((v) -> entries[v] * weights[v]).sum();
-        x += bias;
-        output = outputStrategy.output(x);
-        derivate = outputStrategy.derivative(x);
-        return output;
-    }
+    /**
+     * Método que devuelve el bias de la neurona
+     *
+     * @return valor del bias
+     */
+    double getBias();
 
-    void erase() {
-        output = Double.NaN;
-    }
+    /**
+     * Método que actualiza el bias de la neurona
+     *
+     * @param bias nuevo valor del bias
+     */
+    void setBias(double bias);
 
-    double getBias() {
-        return bias;
-    }
+    /**
+     * Método que devuelve el valor de la función de activación calculado en la
+     * función output
+     *
+     * @return output
+     */
+    Double getOutput();
 
-    void setBias(double bias) {
-        this.bias = bias;
-    }
+    /**
+     * Método que devuelve los pesos de la neurona
+     *
+     * @return array con los valores de los pesos de la neurona
+     */
+    double[] getWeights();
 
-    Double getOutput() {
-        return output;
-    }
+    /**
+     * Método que actualiza la estrategia de la función de activación
+     *
+     * @param o función de activación
+     */
+    void setOutputStrategy(OutputStrategy o);
 
-    public double[] getWeights() {
-        return weights;
-    }
-    
+    /**
+     * Método que devuelve el error de la neurona
+     *
+     * @return valor numérico con el error
+     */
+    Double getError();
 
-    private OutputStrategy getOutputStrategy() {
-        return outputStrategy;
-    }
+    /**
+     * Método que actualiza el valor del error de la neurona
+     *
+     * @param error valor numérico con el numero error d ela neurona
+     */
+    void setError(double error);
 
-    Double getError() {
-        return error;
-    }
-
-    void setError(double error) {
-        this.error = error;
-    }
-
-    public double getDerivate() {
-        return derivate;
-    }
-
-    public void setDerivate(double derivate) {
-        this.derivate = derivate;
-    }
-
+    /**
+     * Método que devuelve la derivada de la función de activación
+     *
+     * @return valor numérico de la derivada
+     */
+    double getDerivate();
 }
