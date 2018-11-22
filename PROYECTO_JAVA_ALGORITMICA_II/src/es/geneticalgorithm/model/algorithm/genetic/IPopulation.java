@@ -25,7 +25,7 @@ public interface IPopulation {
      * aleatoria o a partir de ciertos datos o ficheros.
      *
      */
-    void generatePopulation();
+    void generatePopulation() throws CloneNotSupportedException;
 
     /**
      * Método que evalúa la población y obtiene el fitness de cada miembro.

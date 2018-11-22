@@ -40,7 +40,7 @@ public abstract class Population implements IPopulation {
      *
      */
     @Override
-    public abstract void generatePopulation();
+    public abstract void generatePopulation() throws CloneNotSupportedException;
 
     /**
      * Método que evalúa la población y obtiene el fitness de cada miembro.

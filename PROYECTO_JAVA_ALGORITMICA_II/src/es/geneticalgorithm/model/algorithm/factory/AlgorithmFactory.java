@@ -9,7 +9,7 @@ package es.geneticalgorithm.model.algorithm.factory;
 
 import es.geneticalgorithm.model.algorithm.Algorithm;
 import es.geneticalgorithm.model.algorithm.genetic.GeneticAlgorithm;
-import es.geneticalgorithm.model.algorithm.hibrids.MemeticAlgorithm;
+import es.geneticalgorithm.model.algorithm.hibrids.memetic.MemeticAlgorithm;
 import es.geneticalgorithm.model.algorithm.localsearch.trayectories.SimulatedAnnealing;
 import es.geneticalgorithm.model.algorithm.neuralnetwork.NeuralNetworkAlgoritm;
 import es.geneticalgorithm.model.service.IAlgorithmService;

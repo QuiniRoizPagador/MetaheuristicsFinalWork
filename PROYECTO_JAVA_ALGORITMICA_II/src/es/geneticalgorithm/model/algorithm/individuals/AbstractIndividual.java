@@ -39,6 +39,8 @@ public abstract class AbstractIndividual implements Comparable<AbstractIndividua
     protected FitnessBehaviour fitnessBehaviour;
 
     protected Random rn;
+    
+    private double diversity;
 
     /**
      * Default constructor
@@ -179,6 +181,14 @@ public abstract class AbstractIndividual implements Comparable<AbstractIndividua
      */
     public void setGenotype(List<Integer> genotype) {
         this.genotype = genotype;
+    }
+
+    public void setDiversity(int diversity){
+        this.diversity = diversity;
+    }
+
+    public double getDiversity(){
+        return diversity;
     }
 
     @Override

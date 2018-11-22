@@ -77,7 +77,7 @@ public class View extends AbstractView<IAlgorithmService, AlgorithmController> {
         chart = ChartFactory.createXYLineChart("Mejoras", "", "", datasetLine);
         chart.getPlot().setBackgroundPaint(Color.WHITE);
         chartPanel = new ChartPanel(chart);
-        
+
         datasetScatter = new XYSeriesCollection();
         serieScatterEmployees = new XYSeries("Empleados");
         serieScatterClients = new XYSeries("Clientes");
@@ -395,7 +395,7 @@ public class View extends AbstractView<IAlgorithmService, AlgorithmController> {
         updateChart2();
     }//GEN-LAST:event_cbMedicosActionPerformed
 
-    private void updateChart2(){
+    private void updateChart2() {
         chart2.setNotify(false);
         serieScatterEmployees.clear();
         serieScatterClients.clear();
@@ -425,9 +425,9 @@ public class View extends AbstractView<IAlgorithmService, AlgorithmController> {
     }//GEN-LAST:event_cbPacientesActionPerformed
 
     private void btnEjecutarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEjecutarActionPerformed
-        /*if (nMedicos < nPacientes) {
-        JOptionPane.showMessageDialog(this, "Error, con tan pocos médicos no podemos atenter tantos pacientes. Prueba con más médicos.");
-        } else */{
+        if (nMedicos < nPacientes) {
+            JOptionPane.showMessageDialog(this, "Error, con tan pocos médicos no podemos atenter tantos pacientes. Prueba con más médicos.");
+        } else {
             try {
                 changeEnable(false);
                 jProgressBar1.setValue(0);

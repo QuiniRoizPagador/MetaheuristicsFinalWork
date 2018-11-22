@@ -23,7 +23,7 @@ public class Utils {
      * Tamaño del individuo (tamaño de la mochila, ruta, asignaciones posibles,
      * etc)
      */
-    //public static int individual_size = 20;
+    public static int individual_size = 20;
     /**
      * Tasa de mutación
      */
@@ -67,11 +67,11 @@ public class Utils {
     /**
      * Número máximo de iteraciones del algoritmo principal
      */
-    //public static final float MAX_ITERATIONS = 10000;
+    public static final float MAX_ITERATIONS = 10000;
     /**
      * Número máximo de repeticiones antes de converger
      */
-    //public static final int MAX_REPETITIONS = 500;
+    public static final int MAX_REPETITIONS = 500;
     // TIPOS 
     public static final int SNAPSACK_TYPE = 0;
 
@@ -118,12 +118,28 @@ public class Utils {
      */
     public static final int SNAPSACK_ADVANTAGE_MAX = 200;
 
-    //public static double INITIAL_TEMP = 10000;
-    //public static int MAX_TABU = 4;
+    public static double INITIAL_TEMP = 10000;
+    public static int MAX_TABU = 4;
     public static String REPORTPATH = "reports";
     public static final int N_ENTRIES = 3;
     public static final int N_HIDDEN_NEURONS = 3;
     public static final int N_OUTPUT_NEURONS = 3;
     public static Double LEARNING_RATE = 0.01;
+
+    public static float[][] DISTANCE = new float[individual_size][individual_size];
+    /**
+     * Matriz de concurrencia
+     */
+    public static final int[][] CONCURRENCE = new int[individual_size][individual_size];
+
+    /**
+     * Matriz pesos
+     */
+    public static final int[] WEIGHTS = new int[individual_size];
+
+    /**
+     * Matriz beneficio
+     */
+    public static final int[] ADVANTAGE = new int[individual_size];
 
 }

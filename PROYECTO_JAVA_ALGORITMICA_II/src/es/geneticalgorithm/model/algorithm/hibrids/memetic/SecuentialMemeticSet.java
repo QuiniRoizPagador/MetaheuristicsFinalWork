@@ -5,7 +5,7 @@
  *
  *
  */
-package es.geneticalgorithm.model.algorithm.hibrids;
+package es.geneticalgorithm.model.algorithm.hibrids.memetic;
 
 import es.geneticalgorithm.model.algorithm.genetic.AsyncPopulation;
 import es.geneticalgorithm.model.algorithm.genetic.SecuentialPopulation;
