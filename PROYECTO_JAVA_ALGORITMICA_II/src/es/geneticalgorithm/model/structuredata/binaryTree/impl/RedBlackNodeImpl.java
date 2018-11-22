@@ -5,10 +5,10 @@
  *
  *
  */
-package es.geneticalgorithm.model.structureData.binaryTree.impl;
+package es.geneticalgorithm.model.structuredata.binaryTree.impl;
 
-import es.geneticalgorithm.model.structureData.binaryTree.BinaryNode;
-import es.geneticalgorithm.model.structureData.binaryTree.BlackRedNode;
+import es.geneticalgorithm.model.structuredata.binaryTree.BinaryNode;
+import es.geneticalgorithm.model.structuredata.binaryTree.BlackRedNode;
 
 /**
  * Clase que representa la implementación de un nodo para un árbol rojinegro

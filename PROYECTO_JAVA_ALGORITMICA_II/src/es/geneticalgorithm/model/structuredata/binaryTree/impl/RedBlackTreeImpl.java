@@ -5,9 +5,9 @@
  *
  *
  */
-package es.geneticalgorithm.model.structureData.binaryTree.impl;
+package es.geneticalgorithm.model.structuredata.binaryTree.impl;
 import java.util.Iterator;
-import es.geneticalgorithm.model.structureData.binaryTree.BlackRedNode;
+import es.geneticalgorithm.model.structuredata.binaryTree.BlackRedNode;
 
 /**
  * Clase que representa la implementación de un árbol rojinegro

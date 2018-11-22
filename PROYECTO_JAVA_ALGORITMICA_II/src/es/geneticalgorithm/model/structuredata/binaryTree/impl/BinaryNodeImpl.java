@@ -5,10 +5,10 @@
  *
  *
  */
-package es.geneticalgorithm.model.structureData.binaryTree.impl;
+package es.geneticalgorithm.model.structuredata.binaryTree.impl;
 
-import es.geneticalgorithm.model.structureData.node.NodeImpl;
-import es.geneticalgorithm.model.structureData.binaryTree.BinaryNode;
+import es.geneticalgorithm.model.structuredata.node.NodeImpl;
+import es.geneticalgorithm.model.structuredata.binaryTree.BinaryNode;
 
 /**
  * Clase BinaryNode utilizada para implementación de árboles binarios

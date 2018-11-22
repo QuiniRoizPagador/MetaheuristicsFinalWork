@@ -5,7 +5,7 @@
  *
  *
  */
-package es.geneticalgorithm.model.structureData.binaryTree;
+package es.geneticalgorithm.model.structuredata.binaryTree;
 
 import java.util.Iterator;
 

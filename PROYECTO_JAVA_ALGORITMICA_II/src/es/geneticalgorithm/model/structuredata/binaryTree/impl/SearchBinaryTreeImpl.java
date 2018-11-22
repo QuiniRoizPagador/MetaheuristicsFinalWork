@@ -5,14 +5,14 @@
  *
  *
  */
-package es.geneticalgorithm.model.structureData.binaryTree.impl;
+package es.geneticalgorithm.model.structuredata.binaryTree.impl;
 
-import es.geneticalgorithm.model.structureData.binaryTree.SearchBinaryTree;
+import es.geneticalgorithm.model.structuredata.binaryTree.SearchBinaryTree;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-import es.geneticalgorithm.model.structureData.binaryTree.BinaryNode;
-import es.geneticalgorithm.model.structureData.binaryTree.BlackRedNode;
+import es.geneticalgorithm.model.structuredata.binaryTree.BinaryNode;
+import es.geneticalgorithm.model.structuredata.binaryTree.BlackRedNode;
 
 /**
  * Clase que representa la implementación de un árbol binario de búsquedas con

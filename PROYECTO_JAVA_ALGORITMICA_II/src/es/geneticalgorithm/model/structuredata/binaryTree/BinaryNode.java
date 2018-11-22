@@ -5,9 +5,9 @@
  *
  *
  */
-package es.geneticalgorithm.model.structureData.binaryTree;
+package es.geneticalgorithm.model.structuredata.binaryTree;
 
-import es.geneticalgorithm.model.structureData.node.Node;
+import es.geneticalgorithm.model.structuredata.node.Node;
 
 /**
  * Interfaz que será implementada por los nodos usados para implementar árboles

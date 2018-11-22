@@ -5,7 +5,7 @@
  *
  *
  */
-package es.geneticalgorithm.model.structureData.node;
+package es.geneticalgorithm.model.structuredata.node;
 
 /**
  * Interfaz que será implementada por los nodos usados para implementar
@@ -83,6 +83,10 @@ public interface Node<E> {
      * @return valor con el coste
      */
     double getCost();
+    
+    void setNext(Node<E> n);
+    
+    Node<E> getNext();
 
     @Override
     public boolean equals(Object obj);

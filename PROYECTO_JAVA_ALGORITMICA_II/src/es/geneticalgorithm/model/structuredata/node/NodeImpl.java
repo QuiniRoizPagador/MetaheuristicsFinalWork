@@ -5,7 +5,7 @@
  *
  *
  */
-package es.geneticalgorithm.model.structureData.node;
+package es.geneticalgorithm.model.structuredata.node;
 
 /**
  * Clase nodo que guarda las referencias a los elementos que se almacenarán en
@@ -21,6 +21,7 @@ public class NodeImpl<E> implements Node<E>, Comparable<Node<E>> {
     private double cost;
     private boolean visited;
     private Node<E> previous;
+    private Node<E> next;
 
     public NodeImpl(E element, int cost) {
         this.element = element;
@@ -29,6 +30,16 @@ public class NodeImpl<E> implements Node<E>, Comparable<Node<E>> {
 
     public NodeImpl(E element) {
         this.element = element;
+    }
+    
+    @Override
+    public void setNext(Node<E> next) {
+        this.next = next;
+    }
+
+    @Override
+    public Node<E> getNext() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
@@ -105,5 +116,4 @@ public class NodeImpl<E> implements Node<E>, Comparable<Node<E>> {
         }
         return 0;
     }
-
 }

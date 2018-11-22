@@ -1,6 +1,6 @@
-package es.geneticalgorithm.model.structureData.graph;
+package es.geneticalgorithm.model.structuredata.graph;
 
-import es.geneticalgorithm.model.structureData.node.Node;
+import es.geneticalgorithm.model.structuredata.node.Node;
 import java.util.List;
 
 /**
