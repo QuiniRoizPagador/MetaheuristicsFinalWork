@@ -51,15 +51,10 @@ public class NeuralNetworkTest {
         {0., 1.},
         {1., .0},
         {0., .0}};
-        Double[] result = null;
-        for (int i = 0; i < 1000; i++) {
-            for (int j = 0; j < 4; j++) {
-                instance.train(entries[j], expResult);
-                System.out.println(Arrays.toString(result));
-            }
+
+        for (int j = 0; j < 4; j++) {
+            assertNotNull(instance.forwardPropagation(entries[j]));
         }
-        System.out.println(Arrays.toString(instance.forwardPropagation(entries[0])));
-        assertTrue(true);
     }
 
     /**
@@ -67,7 +62,7 @@ public class NeuralNetworkTest {
      */
     @Test
     public void testBackPropagation() {
-
+        
     }
 
 }
