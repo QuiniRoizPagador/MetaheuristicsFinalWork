@@ -17,7 +17,7 @@ import java.util.PriorityQueue;
 /**
  * Implementación de la clase Grafo, utilizando una matriz de adyacencia
  *
- * @author Quini_Dev
+ * @author Quini Roiz
  * @param <E> Utilizaremos los tipos genéricos de datos para trabajar en esta
  * implementación
  */

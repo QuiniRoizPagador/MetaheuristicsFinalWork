@@ -7,7 +7,7 @@ import java.util.List;
  * Interfaz de un grafo, ofreciendo las funcionalidades principalmente
  * utilizadas para el problema descrito
  *
- * @author Quini_Dev
+ * @author Quini Roiz
  * @param <E> Nuevamente utilizamos los tipos genéricos para este tipo de
  * implementación
  */

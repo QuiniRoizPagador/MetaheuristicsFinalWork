@@ -9,10 +9,9 @@ package es.geneticalgorithm.model.structureData.node;
 
 /**
  * Clase nodo que guarda las referencias a los elementos que se almacenarán en
- * el grafo. Esta clase tiene visibilidad de paquete, no se usará más allá de
- * los grafos.
+ * el grafo.
  *
- * @author Quini_Dev
+ * @author Quini Roiz
  * @param <E> Los tipos utilizados serán genéricos en esta clase, adaptándose a
  * lo recibido en la declaración
  */
