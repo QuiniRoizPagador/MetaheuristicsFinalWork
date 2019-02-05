@@ -4,8 +4,9 @@
  * Libre distribución haciendo referencia al autor.
  */
 package es.geneticalgorithm.model.algorithm.neuralnetwork;
-
 import es.geneticalgorithm.model.algorithm.neuralnetwork.behaviours.HyperbolicTangentOutputStrategy;
+import es.geneticalgorithm.model.algorithm.neuralnetwork.behaviours.RectifiedLinearUnitActivation;
+import es.geneticalgorithm.model.algorithm.neuralnetwork.behaviours.SigmoidOutputStrategy;
 import es.geneticalgorithm.util.Utils;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -30,7 +31,7 @@ public class NeuralLayerImpl implements NeuralLayer {
     public NeuralLayerImpl(int entries, int neurons) {
         this.neurons = IntStream.range(0, neurons).parallel()
                 .mapToObj((i) -> {
-                    return new PerceptronImpl(entries, new HyperbolicTangentOutputStrategy());
+                    return new PerceptronImpl(entries, new SigmoidOutputStrategy());
                 }).collect(Collectors.toList());
     }
 
@@ -100,6 +101,11 @@ public class NeuralLayerImpl implements NeuralLayer {
     @Override
     public List<Perceptron> getNeurons() {
         return neurons;
+    }
+
+    @Override
+    public String toString() {
+        return "\n---------------------------------\n" + neurons;
     }
 
 }

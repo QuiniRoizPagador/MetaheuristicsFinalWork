@@ -73,7 +73,7 @@ public class MemeticAlgorithm extends GeneticAlgorithm implements Runnable {
 
                 set.sort();
                 // evaluar nuevo mejor
-                AbstractIndividual newBest = set.getBestIndividual().clone();
+                newBest = set.getBestIndividual().clone();
                 int cmp = newBest.compareTo(bestIndividual);
                 // si no se ha mejorado la solución encontrada
                 if (cmp < 0) {

@@ -6,6 +6,7 @@
 package es.geneticalgorithm.model.algorithm.neuralnetwork;
 
 import es.geneticalgorithm.model.algorithm.neuralnetwork.behaviours.OutputStrategy;
+import java.util.Arrays;
 import java.util.Random;
 import java.util.stream.IntStream;
 
@@ -89,6 +90,14 @@ public class PerceptronImpl implements Perceptron {
     @Override
     public double getDerivate() {
         return derivate;
+    }
+
+    @Override
+    public String toString() {
+        return "\n-------------------"
+                + "\n Bias: " + bias
+                + "\n Output: " + output
+                + "\n Derivate: " + derivate;
     }
 
 }

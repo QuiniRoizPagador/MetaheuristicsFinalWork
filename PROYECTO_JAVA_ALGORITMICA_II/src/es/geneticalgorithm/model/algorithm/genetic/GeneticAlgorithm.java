@@ -29,6 +29,7 @@ public class GeneticAlgorithm extends Algorithm implements Runnable {
 
     private IPopulation population;
     protected int size;
+    protected AbstractIndividual newBest;
 
     public GeneticAlgorithm(boolean async) throws CloneNotSupportedException {
         super(async);
@@ -65,7 +66,7 @@ public class GeneticAlgorithm extends Algorithm implements Runnable {
                 population.crossover();
                 population.sort();
                 // evaluar nuevo mejor
-                AbstractIndividual newBest = population.getBestIndividual().clone();
+                newBest = population.getBestIndividual().clone();
                 int cmp = newBest.compareTo(bestIndividual);
                 // si no se ha mejorado la solución encontrada
                 if (cmp < 0) {
@@ -100,4 +101,10 @@ public class GeneticAlgorithm extends Algorithm implements Runnable {
         return it / (size * Math.pow(Math.log(size), 2)) * 100;
     }
 
+    @Override
+    public AbstractIndividual getPosible() {
+        return newBest;
+    }
+
+    
 }

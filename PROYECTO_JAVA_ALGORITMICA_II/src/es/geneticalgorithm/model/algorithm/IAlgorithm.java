@@ -48,6 +48,15 @@ public interface IAlgorithm extends Comparable<Algorithm> {
      * @see AbstractIndividual
      */
     AbstractIndividual getBest();
+    
+    /**
+     * Devuelve una referencia al actual invididuo encontrado en el algoritmo.
+     *
+     * @return individuo actual encontrado.
+     *
+     * @see AbstractIndividual
+     */
+    AbstractIndividual getPosible();
 
     /**
      * Actualiza el modelo con el que esta clase se hable para transferir datos

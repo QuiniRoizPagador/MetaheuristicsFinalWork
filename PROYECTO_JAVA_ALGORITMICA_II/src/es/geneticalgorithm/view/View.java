@@ -480,23 +480,19 @@ public class View extends AbstractView<IAlgorithmService, AlgorithmController> {
 
     @Override
     public synchronized void dataModelChanged() {
-        AbstractIndividual ind = getModel().getAlgorithm().getBest();
+        AbstractIndividual ind = getModel().getAlgorithm().getPosible();
 
         long time = System.currentTimeMillis() - startTime;
         Calendar date = new GregorianCalendar();
         date.setTimeInMillis((long) time);
         date.add(Calendar.HOUR, -1);
         lblResTime.setText(date.get(Calendar.HOUR) + ":" + date.get(Calendar.MINUTE) + ":" + date.get(Calendar.SECOND) + ":" + date.get(Calendar.MILLISECOND));
-        if (ind != null && (best == null || ind.compareTo(best) < 0)) {
-            double posExito = model.getAlgorithm().getPosExito();
-            best = ind;
-            lblPuntuacion.setText(String.valueOf(100 * ind.getFitness()));
-            o = new ReportIndividual(ind, date, posExito + 1);
-            max = ind.getFitness();
-            double time2 = (System.currentTimeMillis() - startTime) * 1E-3;
-            seriesLine.add(time2, max);
-            chartPanel.updateUI();
-        }
+        max = ind.getFitness();
+        lblPuntuacion.setText(String.valueOf(100 * ind.getFitness()));
+        double time2 = (System.currentTimeMillis() - startTime) * 1E-3;
+        seriesLine.add(time2, max);
+        chartPanel.updateUI();
+
         if (change) {
             chart.setNotify(false);
             for (int i = 0; i < datasetLine.getSeries().size(); i++) {
@@ -549,6 +545,16 @@ public class View extends AbstractView<IAlgorithmService, AlgorithmController> {
     public synchronized void notifyFinished() {
         jProgressBar1.setValue((int) getModel().getAlgorithm().getPorcentaje());
         lblFinish.setText("exportando...");
+        AbstractIndividual ind = getModel().getAlgorithm().getBest();
+        lblPuntuacion.setText(String.valueOf(100 * ind.getFitness()));
+        long time = System.currentTimeMillis() - startTime;
+        Calendar date = new GregorianCalendar();
+        date.setTimeInMillis((long) time);
+        date.add(Calendar.HOUR, -1);
+        double posExito = model.getAlgorithm().getPosExito();
+        lblResTime.setText(date.get(Calendar.HOUR) + ":" + date.get(Calendar.MINUTE) + ":" + date.get(Calendar.SECOND) + ":" + date.get(Calendar.MILLISECOND));
+        o = new ReportIndividual(ind, date, posExito + 1);
+        
         try {
             if (o == null) {
                 JOptionPane.showMessageDialog(this, "No se han encontrado soluciones.");

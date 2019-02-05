@@ -121,10 +121,11 @@ public class Utils {
     public static double INITIAL_TEMP = 10000;
     public static int MAX_TABU = 4;
     public static String REPORTPATH = "reports";
-    public static final int N_ENTRIES = 3;
-    public static final int N_HIDDEN_NEURONS = 3;
+    public static final int N_ENTRIES = 5;
+    public static final int N_HIDDEN_NEURONS = 50;
+    public static final int N_HIDDEN_LAYERS = 50;
     public static final int N_OUTPUT_NEURONS = 3;
-    public static Double LEARNING_RATE = 0.01;
+    public static Double LEARNING_RATE = 0.003;
 
     public static float[][] DISTANCE = new float[individual_size][individual_size];
     /**

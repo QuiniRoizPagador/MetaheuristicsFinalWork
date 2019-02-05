@@ -67,7 +67,7 @@ public class ScatterSearch extends GeneticAlgorithm {
                 p.updateR();
                 // evaluar nuevo mejor
                 p.sort();
-                AbstractIndividual newBest = p.getBestIndividual().clone();
+                newBest = p.getBestIndividual().clone();
                 int cmp = newBest.compareTo(bestIndividual);
                 // si no se ha mejorado la solución encontrada
                 if (cmp < 0) {

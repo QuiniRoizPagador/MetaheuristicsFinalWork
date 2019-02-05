@@ -34,11 +34,11 @@ public class NeuralNetworkImpl implements NeuralNetwork {
         LABELS = nOutputs;
         neuralNetwork = IntStream.range(0, layers - 1).parallel().mapToObj((i) -> {
             if (i == 0) {
-                return new NeuralLayerImpl(entries, neuronsPerLayer);
+                return new NeuralLayerImpl(ENTRIES, neuronsPerLayer);
             }
             return new NeuralLayerImpl(neuronsPerLayer, neuronsPerLayer);
         }).collect(Collectors.toList());
-        neuralNetwork.add(new NeuralLayerImpl(neuronsPerLayer, nOutputs));
+        neuralNetwork.add(new NeuralLayerImpl(neuronsPerLayer, LABELS));
     }
 
     @Override
@@ -89,5 +89,11 @@ public class NeuralNetworkImpl implements NeuralNetwork {
     public List<NeuralLayer> getNeuralNetwork() {
         return neuralNetwork;
     }
+
+    @Override
+    public String toString() {
+        return neuralNetwork.toString();
+    }
+    
 
 }

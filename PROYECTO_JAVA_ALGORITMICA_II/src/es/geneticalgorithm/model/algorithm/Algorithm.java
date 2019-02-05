@@ -58,6 +58,11 @@ public abstract class Algorithm implements IAlgorithm {
     }
 
     @Override
+    public AbstractIndividual getPosible() {
+        return posible;
+    }
+    
+    @Override
     public void setModel(IAlgorithmService m) {
         model = m;
     }
