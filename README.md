@@ -60,3 +60,7 @@ Se dispone de una documentación, así como una presentacion que explica el cont
 Se han unificado las dos vistas anteriores y modernizado la interfaz, así como añadido un diagrama de dispersión que muestre el conjunto de puntos con los que se trabaja (posiciones de médicos y pacientes).
 
 ![](https://github.com/QuiniRoizPagador/MetaheuristicsFinalWork/blob/master/newView.png)
+
+## ACTUALIZACIÓN 13/02/2019
+
+Se han añadido módulos de estructuras de datos y algoritmos como colonia de hormicas, redes neuronales multicapa o búsqueda dispersa. Queda acoplar a la vista correctamente y los reports.
