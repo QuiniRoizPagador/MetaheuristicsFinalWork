@@ -63,4 +63,4 @@ Se han unificado las dos vistas anteriores y modernizado la interfaz, así como 
 
 ## ACTUALIZACIÓN 13/02/2019
 
-Se han añadido módulos de estructuras de datos y algoritmos como colonia de hormicas, redes neuronales multicapa o búsqueda dispersa. Queda acoplar a la vista correctamente y los reports.
+Se han añadido módulos de estructuras de datos y algoritmos como colonia de hormigas, redes neuronales multicapa o búsqueda dispersa. Queda acoplar a la vista correctamente y los reports.
